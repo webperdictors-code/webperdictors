@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Check, Sparkles } from "lucide-react";
-import { pricingTiers } from "@/lib/data";
+import { pricingTiers, CALENDLY_URL } from "@/lib/data";
 import { Stagger, StaggerItem } from "@/app/components/animations/FadeIn";
 import MagneticButton from "@/app/components/animations/MagneticButton";
 import clsx from "clsx";
@@ -114,7 +114,9 @@ export default function Pricing() {
                 </ul>
 
                 <MagneticButton
-                  href="#contact"
+                  href={CALENDLY_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={clsx(
                     "mt-8 w-full rounded-full px-6 py-3 text-sm font-semibold transition-colors",
                     tier.popular

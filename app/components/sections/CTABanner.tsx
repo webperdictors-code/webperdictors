@@ -3,6 +3,7 @@
 import { ArrowRight } from "lucide-react";
 import FadeIn from "@/app/components/animations/FadeIn";
 import MagneticButton from "@/app/components/animations/MagneticButton";
+import { CALENDLY_URL } from "@/lib/data";
 
 export default function CTABanner() {
   return (
@@ -24,7 +25,9 @@ export default function CTABanner() {
               </p>
               <div className="mt-10 flex justify-center">
                 <MagneticButton
-                  href="mailto:hello@webperdictors.com"
+                  href={CALENDLY_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="group rounded-full bg-white px-8 py-3.5 text-sm font-semibold text-base-950 shadow-glow"
                 >
                   Book a Call

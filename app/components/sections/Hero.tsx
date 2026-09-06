@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, PlayCircle, CheckCircle2, Users, Zap } from "lucide-react";
 import MagneticButton from "@/app/components/animations/MagneticButton";
 import TiltCard from "@/app/components/animations/TiltCard";
+import { CALENDLY_URL } from "@/lib/data";
 
 const container = {
   hidden: {},
@@ -65,7 +66,9 @@ export default function Hero() {
             className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center"
           >
             <MagneticButton
-              href="#contact"
+              href={CALENDLY_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group rounded-full bg-gradient-to-r from-glow-violet to-glow-cyan px-7 py-3.5 text-sm font-semibold text-white shadow-glow"
             >
               Schedule Discovery Call

@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Sparkles, Menu, X } from "lucide-react";
-import { navLinks } from "@/lib/data";
+import { navLinks, CALENDLY_URL } from "@/lib/data";
 import MagneticButton from "@/app/components/animations/MagneticButton";
 
 export default function Header() {
@@ -52,7 +52,9 @@ export default function Header() {
 
         <div className="hidden md:block">
           <MagneticButton
-            href="#contact"
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-base-950 shadow-glow transition-transform hover:scale-[1.03]"
           >
             Book a Call
@@ -87,7 +89,9 @@ export default function Header() {
               </a>
             ))}
             <a
-              href="#contact"
+              href={CALENDLY_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setMobileOpen(false)}
               className="mt-2 inline-flex items-center justify-center rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-base-950"
             >

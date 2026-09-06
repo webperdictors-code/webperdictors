@@ -9,6 +9,8 @@ interface MagneticButtonProps {
   className?: string;
   onClick?: () => void;
   href?: string;
+  target?: string;
+  rel?: string;
   strength?: number;
 }
 
@@ -17,6 +19,8 @@ export default function MagneticButton({
   className,
   onClick,
   href,
+  target,
+  rel,
   strength = 0.3,
 }: MagneticButtonProps) {
   const x = useMotionValue(0);
@@ -40,6 +44,8 @@ export default function MagneticButton({
   return (
     <Component
       href={href}
+      target={target}
+      rel={rel}
       onClick={onClick}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}

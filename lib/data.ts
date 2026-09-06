@@ -1,3 +1,5 @@
+export const CALENDLY_URL = "https://calendly.com/webperdictors/30min";
+
 export interface NavLink {
   label: string;
   href: string;
