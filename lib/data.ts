@@ -178,8 +178,8 @@ export const pricingTiers: PricingTier[] = [
   {
     id: "starter",
     name: "Starter MVP",
-    oneTimePrice: "$4,900",
-    retainerPrice: "$2,400/mo",
+    oneTimePrice: "$400",
+    retainerPrice: "$200/mo",
     description: "For solo founders validating an idea fast.",
     features: [
       "1 core user flow, fully built",
@@ -191,8 +191,8 @@ export const pricingTiers: PricingTier[] = [
   {
     id: "full-saas",
     name: "Full SaaS Launch",
-    oneTimePrice: "$9,900",
-    retainerPrice: "$4,800/mo",
+    oneTimePrice: "$600",
+    retainerPrice: "$300/mo",
     description: "A complete, billable SaaS product ready for users.",
     features: [
       "Full multi-flow application",
@@ -206,8 +206,8 @@ export const pricingTiers: PricingTier[] = [
   {
     id: "partner",
     name: "Dedicated Tech Partner",
-    oneTimePrice: "$18,500",
-    retainerPrice: "$8,900/mo",
+    oneTimePrice: "$1,000",
+    retainerPrice: "$400/mo",
     description: "An embedded team scaling your product long-term.",
     features: [
       "Dedicated senior engineering pod",

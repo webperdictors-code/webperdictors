@@ -1,4 +1,5 @@
 import { Sparkles, Github, Twitter, Linkedin } from "lucide-react";
+import Image from "next/image";
 import { navLinks } from "@/lib/data";
 
 export default function Footer() {
@@ -7,11 +8,24 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="flex flex-col items-start justify-between gap-10 sm:flex-row">
           <div>
-            <a href="#" className="flex items-center gap-2 font-semibold text-white">
-              <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-glow-violet to-glow-cyan">
-                <Sparkles className="h-4 w-4 text-white" />
+            <a href="#" className="flex items-center gap-3 font-semibold text-white">
+              <span className="relative block h-9 w-9 overflow-hidden rounded-xl shadow-glow">
+                <Image
+                  src="/logo-badge.png"
+                  alt="Webperdictors"
+                  fill
+                  sizes="36px"
+                  className="object-cover"
+                />
               </span>
-              <span className="text-lg tracking-tight">Webperdictors</span>
+              <div className="flex flex-col">
+                <span className="text-lg font-bold tracking-tight text-white leading-none">
+                  Webperdictors
+                </span>
+                <span className="text-[10px] font-semibold tracking-wider text-white/50 uppercase mt-0.5">
+                  Digital Product Studio
+                </span>
+              </div>
             </a>
             <p className="mt-4 max-w-xs text-sm text-white/50">
               Building MVPs, SaaS products, and full-stack applications for
