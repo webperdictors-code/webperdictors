@@ -32,18 +32,17 @@ export default function Header() {
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-        <a href="#" className="flex items-center gap-2 font-semibold text-white">
-          <span className="relative flex h-8 w-8 items-center justify-center overflow-hidden rounded-lg shadow-glow">
+        <a href="#" className="flex items-center">
+          <span className="relative block h-11 w-11 overflow-hidden rounded-xl shadow-glow">
             <Image
               src="/logo.png"
-              alt="Webperdictors logo"
+              alt="Webperdictors"
               fill
-              sizes="32px"
+              sizes="44px"
               className="object-cover"
               priority
             />
           </span>
-          <span className="text-lg tracking-tight">Webperdictors</span>
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
