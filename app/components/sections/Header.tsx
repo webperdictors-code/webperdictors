@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Sparkles, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import Image from "next/image";
 import { navLinks, CALENDLY_URL } from "@/lib/data";
 import MagneticButton from "@/app/components/animations/MagneticButton";
 
@@ -32,8 +33,15 @@ export default function Header() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         <a href="#" className="flex items-center gap-2 font-semibold text-white">
-          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-glow-violet to-glow-cyan shadow-glow">
-            <Sparkles className="h-4 w-4 text-white" />
+          <span className="relative flex h-8 w-8 items-center justify-center overflow-hidden rounded-lg shadow-glow">
+            <Image
+              src="/logo.png"
+              alt="Webperdictors logo"
+              fill
+              sizes="32px"
+              className="object-cover"
+              priority
+            />
           </span>
           <span className="text-lg tracking-tight">Webperdictors</span>
         </a>
@@ -103,3 +111,4 @@ export default function Header() {
     </motion.header>
   );
 }
+
