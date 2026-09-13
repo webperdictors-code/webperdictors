@@ -99,35 +99,42 @@ export interface CaseStudy {
   metricLabel: string;
   tags: string[];
   color: string;
+  url?: string;
 }
 
 export const caseStudies: CaseStudy[] = [
   {
-    id: "flowbase",
-    name: "Flowbase",
-    tagline: "No-code workflow automation for solo founders",
-    metric: "$12k MRR",
-    metricLabel: "in 30 days post-launch",
-    tags: ["Next.js", "Stripe", "Supabase"],
+    id: "girl-par-golf",
+    name: "Girl Par Golf",
+    tagline:
+      "A community and events platform helping women golfers find playing partners, discover golf events, and connect through shared golfer profiles — plus a vendor marketplace for approved event partners.",
+    metric: "Events & Marketplace",
+    metricLabel: "Community & booking workflows",
+    tags: ["Bubble", "Events & Booking", "Vendor Marketplace"],
     color: "from-violet-500/30 to-cyan-500/10",
+    url: "https://girlpargolfapp.com/",
   },
   {
-    id: "pulsecrm",
-    name: "PulseCRM",
-    tagline: "AI-assisted CRM for indie B2B sales teams",
-    metric: "3,200 signups",
-    metricLabel: "in first 6 weeks",
-    tags: ["React", "OpenAI", "Node.js"],
+    id: "the-wandering-delbino",
+    name: "The Wandering Delbino",
+    tagline:
+      "A social matching app for travelers, connecting people based on shared flights, destinations and travel plans so they can meet like-minded people on the road.",
+    metric: "Social Matching",
+    metricLabel: "Flight & destination matching",
+    tags: ["Bubble", "Matching Algorithms", "Travel Tech"],
     color: "from-cyan-500/30 to-pink-500/10",
+    url: "https://thewanderingdelbino.bubbleapps.io",
   },
   {
-    id: "shipfast-ai",
-    name: "ShipFast AI",
-    tagline: "AI content pipeline for e-commerce brands",
-    metric: "4.9★ rating",
-    metricLabel: "across 180+ reviews",
-    tags: ["TypeScript", "OpenAI", "Tailwind"],
+    id: "steyel",
+    name: "Steyel",
+    tagline:
+      "An AI-powered fashion discovery app that turns any outfit photo into a shoppable catalog — identifying clothing and accessories and surfacing where to buy them.",
+    metric: "AI Image Recognition",
+    metricLabel: "Photo-to-shop catalog pipeline",
+    tags: ["Bubble", "AI Computer Vision", "E-Commerce"],
     color: "from-pink-500/30 to-amber-500/10",
+    url: "https://steyel.com/",
   },
 ];
 

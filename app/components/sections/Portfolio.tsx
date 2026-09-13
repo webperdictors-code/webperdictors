@@ -35,17 +35,40 @@ export default function Portfolio() {
                   </div>
                 </div>
 
-                <div className="p-6">
-                  <div className="flex items-center justify-between">
+                <div className="flex flex-1 flex-col p-6">
+                  <div className="flex items-center justify-between gap-2">
                     <h3 className="text-lg font-semibold text-white">
-                      {project.name}
+                      {project.url ? (
+                        <a
+                          href={project.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="transition-colors hover:text-glow-cyan"
+                        >
+                          {project.name}
+                        </a>
+                      ) : (
+                        project.name
+                      )}
                     </h3>
-                    <ArrowUpRight className="h-4 w-4 text-white/40 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                    {project.url ? (
+                      <a
+                        href={project.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white/60 transition-colors hover:border-glow-cyan/50 hover:bg-glow-cyan/10 hover:text-white"
+                        aria-label={`Visit ${project.name}`}
+                      >
+                        <ArrowUpRight className="h-4 w-4" />
+                      </a>
+                    ) : (
+                      <ArrowUpRight className="h-4 w-4 text-white/40" />
+                    )}
                   </div>
-                  <p className="mt-2 text-sm text-white/55">{project.tagline}</p>
-                  <p className="mt-1 text-xs text-white/40">{project.metricLabel}</p>
+                  <p className="mt-3 text-sm leading-relaxed text-white/60">{project.tagline}</p>
+                  <p className="mt-2 text-xs font-medium text-glow-cyan/90">{project.metricLabel}</p>
 
-                  <div className="mt-5 flex flex-wrap gap-2">
+                  <div className="mt-6 flex flex-wrap gap-2 pt-1">
                     {project.tags.map((tag) => (
                       <span
                         key={tag}
