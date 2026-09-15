@@ -27,9 +27,17 @@ export default function Footer() {
                 </span>
               </div>
             </a>
-            <p className="mt-4 max-w-xs text-sm text-white/50">
-              Building MVPs, SaaS products, and full-stack applications for
-              founders worldwide.
+            <p className="mt-4 max-w-sm text-sm text-white/50 leading-relaxed">
+              Global digital product studio headquartered in Sialkot, Pakistan — building MVPs, SaaS platforms, and AI applications for founders across the USA, UK, France &amp; worldwide.
+            </p>
+            <p className="mt-3 text-xs text-white/40">
+              Direct inquiries:{" "}
+              <a
+                href="mailto:webperdictors@gmail.com"
+                className="text-glow-cyan hover:underline"
+              >
+                webperdictors@gmail.com
+              </a>
             </p>
             <div className="mt-6 flex gap-4">
               <a href="#" aria-label="GitHub" className="text-white/40 transition-colors hover:text-white">
@@ -80,7 +88,7 @@ export default function Footer() {
 
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs text-white/40 sm:flex-row">
           <p>&copy; {new Date().getFullYear()} Webperdictors. All rights reserved.</p>
-          <p>Built for founders, everywhere.</p>
+          <p>Sialkot, Pakistan • Operating across US, UK, Europe &amp; Worldwide.</p>
         </div>
       </div>
     </footer>

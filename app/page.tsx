@@ -6,6 +6,7 @@ import Portfolio from "@/app/components/sections/Portfolio";
 import Process from "@/app/components/sections/Process";
 import Pricing from "@/app/components/sections/Pricing";
 import Testimonials from "@/app/components/sections/Testimonials";
+import FAQ from "@/app/components/sections/FAQ";
 import CTABanner from "@/app/components/sections/CTABanner";
 import Footer from "@/app/components/sections/Footer";
 
@@ -21,6 +22,7 @@ export default function Home() {
         <Process />
         <Pricing />
         <Testimonials />
+        <FAQ />
         <CTABanner />
       </main>
       <Footer />

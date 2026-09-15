@@ -10,6 +10,7 @@ export const navLinks: NavLink[] = [
   { label: "Portfolio", href: "#portfolio" },
   { label: "Process", href: "#process" },
   { label: "Pricing", href: "#pricing" },
+  { label: "FAQ", href: "#faq" },
 ];
 
 export interface TechLogo {
@@ -259,3 +260,42 @@ export const testimonials: Testimonial[] = [
     initials: "DC",
   },
 ];
+
+export interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+export const faqs: FAQItem[] = [
+  {
+    question: "How do you work with founders in the USA, UK, and France across timezones?",
+    answer:
+      "We operate with an async-first development rhythm with dedicated daily overlap windows for US (EST/CST/PST) and European (GMT/CET) working hours. You receive daily video sprint recaps, real-time Slack/WhatsApp channels, private GitHub repository access, and weekly roadmap planning syncs.",
+  },
+  {
+    question: "What types of products and tech stacks do you build?",
+    answer:
+      "We build complete SaaS platforms, MVPs, B2B tools, and AI-powered web applications. Our primary production stack is Next.js, React, TypeScript, Supabase, Stripe, and OpenAI. We also build fast, scalable no-code applications on Bubble.io for founders looking to validate ideas quickly.",
+  },
+  {
+    question: "How does the 14-day MVP sprint work?",
+    answer:
+      "Days 1–3 focus on product discovery, system architecture, and clickable design systems. Days 4–11 cover core full-stack engineering, authentication, database schemas, and billing integration. Days 12–14 are reserved for QA testing, performance tuning, and live production deployment on Vercel or AWS.",
+  },
+  {
+    question: "Where is Webperdictors located, and how are payments handled?",
+    answer:
+      "Webperdictors is an international digital product studio based in Sialkot, Pakistan, with clients across North America, the UK, France, and worldwide. All invoices are billed in USD or EUR through Stripe, credit cards, or international wire transfers with transparent, fixed-scope pricing.",
+  },
+  {
+    question: "Can you integrate AI or LLMs into an existing application?",
+    answer:
+      "Yes. We integrate OpenAI, Claude, vector databases (RAG), and agentic workflows into existing React/Next.js and Bubble applications to power smart chatbots, copilot assistants, and automated business workflows.",
+  },
+  {
+    question: "Do you provide maintenance and scaling support after launch?",
+    answer:
+      "Yes. We offer ongoing monthly retainers (starting at $200/mo) and dedicated tech partnership pods ($400/mo) for continuous feature iterations, bug resolution, infrastructure scaling, and product evolution as your customer base grows.",
+  },
+];
+
